@@ -22,6 +22,11 @@
       #item-5 {
         order: 3;
       }
+      code {
+        background: rgb(186, 235, 255);
+        border: 1px solid skyblue;
+        color: black;
+      }
     </style>
   </head>
 
@@ -33,6 +38,10 @@
       All items are positioned with the <code>order</code> property. Items 2 and
       3 have <code>order: 1</code>, items 4 and 5 have <code>order: 3</code>,
       and item 1 has <code>order: 2</code>
+    </p>
+    <p>
+      Expected focus order should be: Item 1 (centered), Item 2, Item 3, Item 4,
+      Item 5
     </p>
 
     <div class="flex-container">
