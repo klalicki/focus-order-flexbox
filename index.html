@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Order</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        align-items: center;
+      }
+      #item-1 {
+        order: 2;
+        height: 50px;
+      }
+      #item-2,
+      #item-3 {
+        order: 1;
+      }
+      #item-4,
+      #item-5 {
+        order: 3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Focus Order Test</h1>
+    <p>Seeing if flexbox and grid positioning can affect focus order</p>
+    <h2>Flexbox</h2>
+    <p>
+      All items are positioned with the <code>order</code> property. Items 2 and
+      3 have <code>order: 1</code>, items 4 and 5 have <code>order: 3</code>,
+      and item 1 has <code>order: 2</code>
+    </p>
+
+    <div class="flex-container">
+      <button id="item-1">item 1</button>
+      <button id="item-2">item 2</button>
+      <button id="item-3">item 3</button>
+      <button id="item-4">item 4</button>
+      <button id="item-5">item 5</button>
+    </div>
+  </body>
+</html>
